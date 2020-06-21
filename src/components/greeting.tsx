@@ -14,7 +14,8 @@ class Greeting extends React.Component<Props> {
 
     render() {
         return (
-            <div className={`${styles.centerize} ${styles.header}`}>
+            // <div className={`${styles.centerize} ${styles.header}`}>
+            <div className={[styles.centerize, styles.header].join(' ')}>
                 Hello {this.props.text}
             </div>
         );
